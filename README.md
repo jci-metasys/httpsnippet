@@ -2,6 +2,20 @@
 
 [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
+## Note for JCI Developers
+
+Changes are published to NPM **manually**. To publish:
+
+- Make changes.
+- Submit a PR (make sure to update the version in package.json and package-lock.json)
+- Once PR is approved, you can publish but first, you will need to be authenticated to NPM JS for the `metasys` org (request access as needed).
+
+  ```bash
+  npm login
+  npm run build
+  npm publish
+  ```
+
 > HTTP Request snippet generator for _many_ languages & tools including: `cURL`, `HTTPie`, `JavaScript`, `Node`, `C`, `Java`, `PHP`, `Objective-C`, `Swift`, `Python`, `Ruby`, `C#`, `Go`, `OCaml`, `Crystal` and [more](https://github.com/Kong/httpsnippet/wiki/Targets)!
 
 Relies on the popular [HAR](http://www.softwareishard.com/blog/har-12-spec/#request) format to import data and describe HTTP calls.
@@ -11,6 +25,7 @@ See it in action on companion service: [APIembed](https://apiembed.com)
 [![Build](https://github.com/Kong/httpsnippet/actions/workflows/build.yml/badge.svg)](https://github.com/Kong/httpsnippet/actions/workflows/build.yml) [![Downloads][npm-downloads]][npm-url]
 
 - [HTTPSnippet](#httpsnippet)
+  - [Note for JCI Developers](#note-for-jci-developers)
   - [Quickstart](#quickstart)
     - [Core Concepts](#core-concepts)
     - [CLI Quickstart](#cli-quickstart)
