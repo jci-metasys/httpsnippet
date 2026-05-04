@@ -10,7 +10,9 @@
     "resolveJsonModule": true,
     "rootDir": "src",
     "sourceMap": true,
-    "strict": true
+    "strict": true,
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "jest"]
   },
   "include": ["src"],
   "exclude": ["dist", "**/*.test.ts"]
